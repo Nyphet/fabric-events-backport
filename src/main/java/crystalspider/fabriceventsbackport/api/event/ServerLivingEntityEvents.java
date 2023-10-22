@@ -1,4 +1,4 @@
-package main.java.crystalspider.fabriceventsbackport.api.event;
+package crystalspider.fabriceventsbackport.api.event;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
