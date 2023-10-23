@@ -5,9 +5,6 @@ plugins {
   id "com.github.breadmoirai.github-release" version "2.4.+"
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
-
 archivesBaseName = modid
 version = "${minecraft_version}-${mod_version}"
 group = project.group
@@ -58,6 +55,12 @@ processResources {
   }
 }
 
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
+}
+
 jar {
   manifest {
     attributes([
@@ -76,6 +79,7 @@ jar {
 
 tasks.withType(JavaCompile).configureEach {
   it.options.encoding = "UTF-8"
+	it.options.release = 16
 }
 
 def changelog_body = "See [Changelog](https://github.com/${github_user}/${modid_kebab}/blob/master/CHANGELOG.md#${minecraft_version.replaceAll('\\.', '')}-${mod_version.replaceAll('\\.', '')}---${new Date().format("yyyyMMdd")})."

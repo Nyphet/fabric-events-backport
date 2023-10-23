@@ -2,20 +2,9 @@
   "required": true,
   "minVersion": "0.8",
   "compatibilityLevel": "JAVA_8",
-  "package": "crystalspider.soulfired.mixin",
+  "package": "crystalspider.fabriceventsbackport.mixin",
   "mixins": [
-    "AbstractFireBlockMixin",
-    "BowItemMixin",
-    "CampfireBlockMixin",
-    "EnchantmentHelperMixin",
-    "EntityMixin",
-    "PersistentProjectileEntityMixin",
-    "PlayerEntityMixin",
-    "PlayerManagerMixin",
-    "ZombieEntityMixin"
-  ],
-  "client": [
-    "client.EntityRenderDispatcherMixin",
-    "client.InGameOverlayRendererMixin"
+    "LivingEntityMixin",
+    "ServerPlayerEntityMixin"
   ]
 }
