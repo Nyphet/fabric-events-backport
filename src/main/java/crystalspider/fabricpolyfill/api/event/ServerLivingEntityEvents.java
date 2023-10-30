@@ -1,4 +1,4 @@
-package crystalspider.fabriceventsbackport.api.event;
+package crystalspider.fabricpolyfill.api.event;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;

@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "fabric-events-backport" Minecraft mod will be documented in this file.
+All notable changes to the "fabric-polyfill" Minecraft mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Forge Semantic Versioning](https://mcforge.readthedocs.io/en/latest/gettingstarted/versioning/#versioning).
 
 ## **Migration**
-This Changelog has been migrated to the newest [Changelog](https://github.com/Nyphet/fabric-events-backport/blob/master/CHANGELOG.md), refer to that one.
+This Changelog has been migrated to the newest [Changelog](https://github.com/Nyphet/fabric-polyfill/blob/master/CHANGELOG.md), refer to that one.

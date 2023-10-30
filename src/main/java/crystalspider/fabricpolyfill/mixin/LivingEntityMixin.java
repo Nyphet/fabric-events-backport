@@ -1,4 +1,4 @@
-package crystalspider.fabriceventsbackport.mixin;
+package crystalspider.fabricpolyfill.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import crystalspider.fabriceventsbackport.api.event.ServerLivingEntityEvents;
+import crystalspider.fabricpolyfill.api.event.ServerLivingEntityEvents;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;

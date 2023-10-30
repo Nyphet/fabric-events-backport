@@ -79,7 +79,7 @@ jar {
 
 tasks.withType(JavaCompile).configureEach {
   it.options.encoding = "UTF-8"
-	it.options.release = 16
+	it.options.release = 8
 }
 
 def changelog_body = "See [Changelog](https://github.com/${github_user}/${modid_kebab}/blob/master/CHANGELOG.md#${minecraft_version.replaceAll('\\.', '')}-${mod_version.replaceAll('\\.', '')}---${new Date().format("yyyyMMdd")})."

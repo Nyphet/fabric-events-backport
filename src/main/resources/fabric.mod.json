@@ -17,11 +17,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "${group}.${modid}.FabricEventsBackportLoader"
+      "${group}.${modid}.FabricPolyfillLoader"
     ]
   },
   "mixins": [
-    "fabriceventsbackport.mixins.json"
+    "fabricpolyfill.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

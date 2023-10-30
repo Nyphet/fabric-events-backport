@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "compatibilityLevel": "JAVA_8",
-  "package": "crystalspider.fabriceventsbackport.mixin",
+  "package": "crystalspider.fabricpolyfill.mixin",
   "mixins": [
     "LivingEntityMixin",
     "ServerPlayerEntityMixin"
