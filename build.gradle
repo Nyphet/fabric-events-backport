@@ -96,7 +96,7 @@ curseforge {
     id = curseforge_id
     changelogType = "markdown"
     changelog = changelog_body
-    releaseType = "alpha"
+    releaseType = "release"
     addGameVersion loader
     addGameVersion minecraft_version
     mainArtifact(remapJar) {
@@ -118,7 +118,7 @@ modrinth {
   versionName = "[${minecraft_version}] ${mod_title} v${mod_version}"
   changelog = changelog_body
   uploadFile = remapJar
-  versionType = "alpha"
+  versionType = "release"
   gameVersions = [minecraft_version]
   loaders = [loader.toLowerCase()]
   dependencies {
@@ -136,7 +136,7 @@ githubRelease {
   generateReleaseNotes false
   body changelog_body
   draft true
-  prerelease true
+  prerelease false
   releaseAssets remapJar
   // Setting this to true will allow this plugin to upload artifacts to a release if it found an existing one. If overwrite is set to true, this option is ignored.
   allowUploadToExisting true
