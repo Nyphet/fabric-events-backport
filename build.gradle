@@ -57,8 +57,8 @@ processResources {
 
 java {
 	withSourcesJar()
-	sourceCompatibility = JavaVersion.VERSION_1_8
-	targetCompatibility = JavaVersion.VERSION_1_8
+	sourceCompatibility = JavaVersion.VERSION_17
+  targetCompatibility = JavaVersion.VERSION_17
 }
 
 jar {
@@ -79,7 +79,7 @@ jar {
 
 tasks.withType(JavaCompile).configureEach {
   it.options.encoding = "UTF-8"
-	it.options.release = 8
+	it.options.release = 17
 }
 
 def changelog_body = "See [Changelog](https://github.com/${github_user}/${modid_kebab}/blob/master/CHANGELOG.md#${minecraft_version.replaceAll('\\.', '')}-${mod_version.replaceAll('\\.', '')}---${new Date().format("yyyyMMdd")})."
