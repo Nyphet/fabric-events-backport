@@ -8,6 +8,18 @@ and this project adheres to [Forge Semantic Versioning](https://mcforge.readthed
 ## [Unreleased]
 - Nothing new.
 
+## [1.18.2-1.0.0.2] - 2023/11/01
+- Added MixinSquared to actually fix crash.
+
+## [1.16.5-1.0.0.2] - 2023/11/01
+- Added MixinSquared to actually fix crash.
+
+## [1.18.2-1.0.0.1] - 2023/11/01
+- Attempt to fix crash.
+
+## [1.16.5-1.0.0.1] - 2023/11/01
+- Attempt to fix crash.
+
 ## [1.18.2-1.0.0.0] - 2023/10/31
 - Ported to 1.18.2.
 
@@ -19,7 +31,11 @@ and this project adheres to [Forge Semantic Versioning](https://mcforge.readthed
 
 [Unreleased]: https://github.com/Nyphet/fabric-polyfill
 
+[1.18.2-1.0.0.2]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.18.2-1.0.0.2
+[1.18.2-1.0.0.1]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.18.2-1.0.0.1
 [1.18.2-1.0.0.0]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.18.2-1.0.0.0
 
+[1.16.5-1.0.0.2]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.16.5-1.0.0.2
+[1.16.5-1.0.0.1]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.16.5-1.0.0.1
 [1.16.5-1.0.0.0]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.16.5-1.0.0.0
 [1.16.5-1.0.0.0-alpha]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.16.5-1.0.0.0-alpha
