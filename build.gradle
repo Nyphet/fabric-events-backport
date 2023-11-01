@@ -9,7 +9,9 @@ archivesBaseName = modid
 version = "${minecraft_version}-${mod_version}"
 group = project.group
 
-repositories {}
+repositories {
+  maven { url = "https://jitpack.io" }
+}
 
 dependencies {
   minecraft "com.mojang:minecraft:${minecraft_version}"
@@ -18,6 +20,9 @@ dependencies {
 
   // Fabric API. This is technically optional, but you probably want it anyway.
   modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+
+  // MixinSquared dependency
+  include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.1.1")))
 }
 
 def resourceTarget = "fabric.mod.json"

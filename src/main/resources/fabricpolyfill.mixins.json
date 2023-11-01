@@ -5,6 +5,8 @@
   "package": "crystalspider.fabricpolyfill.mixin",
   "mixins": [
     "LivingEntityMixin",
+    "LivingEntityMixinSquared",
     "ServerPlayerEntityMixin"
-  ]
+  ],
+  "plugin": "crystalspider.fabricpolyfill.MixinConfigPlugin"
 }
