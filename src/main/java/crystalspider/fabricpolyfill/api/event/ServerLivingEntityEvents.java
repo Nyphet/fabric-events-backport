@@ -11,11 +11,6 @@ import net.minecraft.server.network.ServerPlayerEntity;
  * Various server-side only events related to living entities.
  */
 public final class ServerLivingEntityEvents {
-  static {
-		// Forward general living entity event to (older) player-specific event.
-		ServerLivingEntityEvents.ALLOW_DEATH.register((entity, damageSource, damageAmount) -> entity instanceof ServerPlayerEntity player ? ServerPlayerEvents.ALLOW_DEATH.invoker().allowDeath(player, damageSource, damageAmount) : true);
-	}
-
 	/**
 	 * An event that is called when a living entity is going to take damage.
 	 * This is fired from {@link LivingEntity#damage}, before armor or any other mitigation are applied.
@@ -60,6 +55,11 @@ public final class ServerLivingEntityEvents {
 			callback.afterDeath(entity, damageSource);
 		}
 	});
+
+  static {
+		// Forward general living entity event to (older) player-specific event.
+		ServerLivingEntityEvents.ALLOW_DEATH.register((entity, damageSource, damageAmount) -> entity instanceof ServerPlayerEntity player ? ServerPlayerEvents.ALLOW_DEATH.invoker().allowDeath(player, damageSource, damageAmount) : true);
+	}
 
 	@FunctionalInterface
 	public interface AllowDamage {
