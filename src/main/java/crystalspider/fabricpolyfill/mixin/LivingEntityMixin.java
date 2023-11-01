@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 /**
  * Injects into {@link LivingEntity} to add event callback hooks.
  */
-@Mixin(LivingEntity.class)
+@Mixin(value = LivingEntity.class, priority = 1001)
 public abstract class LivingEntityMixin {
   /**
    * Shadowed {@link LivingEntity#isDead()}.
@@ -34,7 +34,7 @@ public abstract class LivingEntityMixin {
    * 
    * @param source
    * @param ci
-  */
+   */
   @Inject(method = "onDeath", at = @At(value = "INVOKE", target = "net/minecraft/world/World.sendEntityStatus(Lnet/minecraft/entity/Entity;B)V"))
 	private void notifyDeath(DamageSource source, CallbackInfo ci) {
 		ServerLivingEntityEvents.AFTER_DEATH.invoker().afterDeath((LivingEntity) (Object) this, source);
@@ -49,7 +49,7 @@ public abstract class LivingEntityMixin {
    * @param source
    * @param amount
    * @return
-  */
+   */
 	@Redirect(method = "damage", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/LivingEntity;isDead()Z", ordinal = 1))
 	boolean beforeEntityKilled(LivingEntity livingEntity, DamageSource source, float amount) {
 		return isDead() && ServerLivingEntityEvents.ALLOW_DEATH.invoker().allowDeath(livingEntity, source, amount);
