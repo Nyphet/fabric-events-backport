@@ -16,6 +16,34 @@ Backport of some Fabric API events from later versions.
 ## **Backported events**
 - `ServerLivingEntityEvents`
 
+## **How to use**
+To import this API in your project, do the following in your `build.gradle`:  
+```groovy
+repositories {
+  // Other repositories...
+  maven {
+    url "https://cursemaven.com"
+    content {
+      includeGroup "curse.maven"
+    }
+  }
+  maven { url = "https://jitpack.io" }
+}
+
+dependencies {
+  // Other dependencies...
+
+  // Fabric API dependency
+  modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+  // Fabric Polyfill dependency (check the correct file id via CurseForge: select the file on the website, open "Curse Maven Snippet", and copy the line)
+  modImplementation "curse.maven:fabric-polyfill-926195:xxxxxxx"
+  // MixinSquared dependency for Fabric Polyfill
+  include(api(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:0.1.1")))
+}
+```
+
+To use the events, use them as you would with normal Fabric API events in newer Minecraft versions.
+
 ## **License and right of use**
 Feel free to use this mod for any modpack or video, just be sure to give credit and possibly link [here](https://github.com/Nyphet/fabric-polyfill#readme).  
 This project is published under the [GNU General Public License v3.0](https://github.com/Nyphet/fabric-polyfill/blob/master/LICENSE).
