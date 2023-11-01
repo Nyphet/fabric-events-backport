@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 /**
  * Injects into {@link LivingEntity} to add event callback hooks.
  */
-@Mixin(LivingEntity.class)
+@Mixin(value = LivingEntity.class, priority = 1001)
 public abstract class LivingEntityMixin {
   /**
    * Shadowed {@link LivingEntity#isDead()}.

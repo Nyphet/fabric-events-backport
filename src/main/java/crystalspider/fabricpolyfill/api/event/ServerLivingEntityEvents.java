@@ -1,14 +1,21 @@
 package crystalspider.fabricpolyfill.api.event;
 
+import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.server.network.ServerPlayerEntity;
 
 /**
  * Various server-side only events related to living entities.
  */
 public final class ServerLivingEntityEvents {
+  static {
+		// Forward general living entity event to (older) player-specific event.
+		ServerLivingEntityEvents.ALLOW_DEATH.register((entity, damageSource, damageAmount) -> entity instanceof ServerPlayerEntity ? ServerPlayerEvents.ALLOW_DEATH.invoker().allowDeath((ServerPlayerEntity) entity, damageSource, damageAmount) : true);
+	}
+
 	/**
 	 * An event that is called when a living entity is going to take damage.
 	 * This is fired from {@link LivingEntity#damage}, before armor or any other mitigation are applied.
