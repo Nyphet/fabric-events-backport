@@ -35,15 +35,15 @@ and this project adheres to [Forge Semantic Versioning](https://mcforge.readthed
 ## [1.16.5-1.0.0.0-alpha] - 2023/10/30
 - Added `ServerLivingEntityEvents`.
 
-[Unreleased]: https://github.com/Nyphet/fabric-polyfill
+[Unreleased]: https://github.com/crystal-nest/fabric-polyfill
 
-[1.18.2-1.0.0.3]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.18.2-1.0.0.3
-[1.18.2-1.0.0.2]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.18.2-1.0.0.2
-[1.18.2-1.0.0.1]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.18.2-1.0.0.1
-[1.18.2-1.0.0.0]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.18.2-1.0.0.0
+[1.18.2-1.0.0.3]: https://github.com/crystal-nest/fabric-polyfill/releases/tag/v1.18.2-1.0.0.3
+[1.18.2-1.0.0.2]: https://github.com/crystal-nest/fabric-polyfill/releases/tag/v1.18.2-1.0.0.2
+[1.18.2-1.0.0.1]: https://github.com/crystal-nest/fabric-polyfill/releases/tag/v1.18.2-1.0.0.1
+[1.18.2-1.0.0.0]: https://github.com/crystal-nest/fabric-polyfill/releases/tag/v1.18.2-1.0.0.0
 
-[1.16.5-1.0.0.3]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.16.5-1.0.0.3
-[1.16.5-1.0.0.2]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.16.5-1.0.0.2
-[1.16.5-1.0.0.1]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.16.5-1.0.0.1
-[1.16.5-1.0.0.0]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.16.5-1.0.0.0
-[1.16.5-1.0.0.0-alpha]: https://github.com/Nyphet/fabric-polyfill/releases/tag/v1.16.5-1.0.0.0-alpha
+[1.16.5-1.0.0.3]: https://github.com/crystal-nest/fabric-polyfill/releases/tag/v1.16.5-1.0.0.3
+[1.16.5-1.0.0.2]: https://github.com/crystal-nest/fabric-polyfill/releases/tag/v1.16.5-1.0.0.2
+[1.16.5-1.0.0.1]: https://github.com/crystal-nest/fabric-polyfill/releases/tag/v1.16.5-1.0.0.1
+[1.16.5-1.0.0.0]: https://github.com/crystal-nest/fabric-polyfill/releases/tag/v1.16.5-1.0.0.0
+[1.16.5-1.0.0.0-alpha]: https://github.com/crystal-nest/fabric-polyfill/releases/tag/v1.16.5-1.0.0.0-alpha
