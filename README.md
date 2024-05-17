@@ -1,4 +1,4 @@
-![Fabric Polyfill](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/fabric-polyfill/banner.png)
+![Fabric Polyfill banner](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/fabric-polyfill/banner.png)
 
 ---
 ![Minecraft](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/minecraft/minecraft.svg)[![1.18.2](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/minecraft/1-18-2.svg)](https://modrinth.com/mod/fabric-polyfill/versions?g=1.18.2)![Separator](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/separator.svg)[![1.16.5](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/minecraft/1-16-5.svg)](https://modrinth.com/mod/fabric-polyfill/versions?g=1.16.5)
