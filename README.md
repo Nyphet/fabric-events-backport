@@ -10,6 +10,9 @@
 ![Issues](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/github/issues.svg)[![GitHub](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/github/github.svg)](https://github.com/crystal-nest/fabric-polyfill/issues)
 
 ---
+# Deprecated
+This mod is deprecated as 1.16.5 is no longer supported and 1.18.2 backported event has been moved to [Cobweb](https://github.com/Crystal-Nest/cobweb).
+
 ## **Description**
 Backport of some Fabric API events from later versions.
 
